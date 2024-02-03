@@ -1,26 +1,26 @@
 @font-face {
     font-family: 'Raleway';
-    src: url(./Assets/Raleway/Raleway-ExtraBold.ttf);
+    src: url(./assets/Raleway/Raleway-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url(./Assets/Roboto/Roboto-Regular.ttf);
+    src: url(./assets/Roboto/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(./Assets/OpenSans/OpenSans-Regular.ttf);
+    src: url(./assets/OpenSans/OpenSans-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Open Sans Lighter';
-    src: url(./Assets/OpenSans/OpenSans-Light.ttf);
+    src: url(./assets/OpenSans/OpenSans-Light.ttf);
 }
 
 @font-face {
     font-family: 'Roboto Lighter';
-    src: url(./Assets/Roboto/Roboto-Light.ttf);
+    src: url(./assets/Roboto/Roboto-Light.ttf);
 }
 
 *{
@@ -132,7 +132,7 @@ h1{
     gap: 5rem;
     background-color: #D6F5F1;
     padding: 7% 0;
-    background-image: linear-gradient(to bottom, rgba(1, 14, 22, 0.85), rgba(1, 13, 17, 0.93)), url(./Assets/shikshadeep_4.jpeg);;
+    background-image: linear-gradient(to bottom, rgba(1, 14, 22, 0.85), rgba(1, 13, 17, 0.93)), url(./assets/shikshadeep_4.jpeg);;
     background-repeat: round;
     background-size: cover;
 }
@@ -169,8 +169,7 @@ h1{
 }
 
 .gallery-box{
-    width: 90%;
-    
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -184,14 +183,56 @@ h1{
     border: 2px solid #32DBC6;
 }
 
-footer{
-    background-color: #4D4D4D;
-    padding: 1% 2%;
-    text-align: center;
+.sitemap-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2% 0;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
-    color: White;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.footer-links, .footer-contact {
+    flex-basis: 45%;
+    margin-bottom: 2%;
+}
+
+.footer-links h3, .footer-contact h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 3px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.footer-contact p {
+    margin-bottom: 3px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
 }
